@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="glow glow-left" aria-hidden="true"></div>
+    <div class="glow glow-right" aria-hidden="true"></div>
+
+    <header class="hero">
+      <p class="eyebrow">// personal archive</p>
+      <div class="clock">
+        <p class="clock-time" id="clockTime">00:00:00</p>
+        <p class="clock-date" id="clockDate">Loading date...</p>
+      </div>
+      <h1>WELCOME TO MY PORTFOLIO</h1>
+      <p class="intro">
+        I am a beginner learning web development. I like building clean, glowing
+        interfaces and turning ideas into small working websites.
+      </p>
+      <button
+        class="contact-btn"
+        id="contactBtn"
+        type="button"
+        aria-expanded="false"
+        aria-controls="contactPanel"
+      >
+        Contact Me
+      </button>
+    </header>
+
+    <main>
+      <section class="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Featured Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="card-tag">01</p>
+            <h3>Neon Weather App</h3>
+            <p>
+              A simple dashboard that shows the weather with a dark theme and
+              glowing temperature cards.
+            </p>
+          </article>
+          <article class="project-card">
+            <p class="card-tag">02</p>
+            <h3>Task Orbit</h3>
+            <p>
+              A to-do list that helps me track practice projects, notes, and
+              daily coding goals.
+            </p>
+          </article>
+          <article class="project-card">
+            <p class="card-tag">03</p>
+            <h3>Pixel Notes</h3>
+            <p>
+              A lightweight notes page for saving ideas, color palettes, and
+              things I want to build next.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <section
+      class="contact-panel"
+      id="contactPanel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="contactTitle"
+      hidden
+    >
+      <h2 id="contactTitle">Let's connect</h2>
+      <p>
+        Replace this email with yours later. For now, this button shows a short
+        contact message.
+      </p>
+      <a class="mail-link" href="mailto:hello@example.com">hello@example.com</a>
+      <button class="close-btn" id="closeContactBtn" type="button">Close</button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
